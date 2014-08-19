@@ -1,0 +1,1 @@
+Name,value__cQuote_Template_Data_Viewer_URL,/quote/quoteTemplateDataViewer.apexp?id={!QuoteId}&headerHeight={!InvoiceHeaderHeight}&footerHeight={!InvoiceFooterHeight}&summlid={!InvoiceTemplateId}#toolbar=1&navpanes=0&zoom=90Invoice_Footer_Height,149Invoice_Header_Height,106Invoice_Template_Id,0EHd0000000RBX2

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <webLinks>
+        <fullName>Generate_Invoice</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Invoice</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)}
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/apex.js&quot;)}
+
+
+
+var oppId = &apos;{!Opportunity.Id}&apos;;
+
+var errorMsg = sforce.apex.execute(&quot;valnavjo/InvoicePdfWsSample&quot;, &quot;generateInvoicePdf&quot;, {oppsIdList:oppId});
+
+
+
+if (errorMsg != &apos;&apos;) alert(errorMsg);
+
+else window.location.reload();</url>
+    </webLinks>
+</CustomObject>
